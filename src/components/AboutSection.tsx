@@ -1,7 +1,9 @@
 import portraitImage from "@/assets/reborn-portrait.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
 const AboutSection = () => {
-  return <section className="py-24 px-6 bg-black border-t border-gold/20">
+  return <section className="relative py-24 px-6 bg-black border-t border-gold/20">
+      {/* Vertical divider for grid */}
+      <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-[1fr,1.2fr] gap-12 md:gap-16 items-center">
           {/* Left - Portrait */}

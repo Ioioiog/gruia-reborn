@@ -12,7 +12,9 @@ const GallerySection = () => {
   ];
 
   return (
-    <section className="relative py-32 md:py-48 px-6 bg-background overflow-hidden">
+    <section className="relative py-32 md:py-48 px-6 bg-background overflow-hidden border-t border-gold/20">
+      {/* Vertical divider for grid */}
+      <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background pointer-events-none" />
       

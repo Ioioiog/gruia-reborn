@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-portrait.jpg";
 const HeroSection = () => {
-  return <section className="relative min-h-screen w-full overflow-hidden bg-black border-l border-r border-gold/20">
+  return <section className="relative min-h-screen w-full overflow-hidden bg-black">
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-0">
         <div className="grid md:grid-cols-[1fr,1fr] gap-0 min-h-screen items-center">
           {/* Left - Text Content */}
