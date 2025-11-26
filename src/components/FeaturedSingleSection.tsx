@@ -35,7 +35,7 @@ const FeaturedSingleSection = () => {
         </div>
 
         <Button variant="goldOutline" size="lg" className="w-full max-w-xs" asChild>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://youtu.be/hjTKNiIEGx4?si=S6FcX_XZQRsaAEBQ" target="_blank" rel="noopener noreferrer">
             WATCH ON YOUTUBE
           </a>
         </Button>
