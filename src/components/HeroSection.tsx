@@ -45,7 +45,7 @@ const HeroSection = () => {
             <img
               src={heroImage}
               alt="Mihai Gruia"
-              className="absolute inset-0 w-full h-full object-cover object-[50%_30%]"
+              className="absolute inset-0 w-full h-full object-cover object-[55%_30%]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none z-10" />
           </div>
