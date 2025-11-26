@@ -3,11 +3,11 @@ import { Music, Mic2, User, Sparkles } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-black">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-0">
-        <div className="grid md:grid-cols-[1fr,1fr] gap-0 min-h-screen items-center">
+    <section className="relative w-full overflow-hidden bg-black">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-[1fr,1fr] gap-0 items-center">
           {/* Left - Portrait Image (mirrored from hero) */}
-          <div className="relative h-[60vh] md:h-screen animate-fade-in overflow-hidden">
+          <div className="relative h-[50vh] md:h-[70vh] animate-fade-in overflow-hidden">
             <img 
               src={gruiaPortrait} 
               alt="Mihai Gruia Portrait" 
@@ -17,7 +17,7 @@ const AboutSection = () => {
           </div>
 
           {/* Right - Text Content */}
-          <div className="animate-fade-in space-y-6 py-20 md:py-0 md:pl-12">
+          <div className="animate-fade-in space-y-6 py-12 md:py-0 md:pl-12">
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-[0.15em] text-primary uppercase leading-[1.1] lg:text-6xl">
               THIS IS GRUIA
             </h2>
