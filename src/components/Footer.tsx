@@ -7,7 +7,7 @@ const Footer = () => {
           <span className="font-medium">This is GRUIA. Reborn.</span>
         </p>
         <p className="text-muted-foreground text-sm tracking-widest">
-          © {new Date().getFullYear()} Mihai Gruia.
+          © 2025 MIHAI GRUIA
         </p>
       </div>
     </footer>
