@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import berealCover from "@/assets/bereal-cover.jpg";
-
 const FeaturedSingleSection = () => {
-  return (
-    <section className="py-24 px-6 bg-black border-t border-gold/20">
+  return <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-[1.2fr,1fr] gap-12 md:gap-16 items-center">
           {/* Left - Text */}
@@ -21,11 +19,7 @@ const FeaturedSingleSection = () => {
               A song about dropping the masks and coming back to who you really are.
             </p>
 
-            <Button 
-              variant="goldOutline" 
-              size="lg"
-              asChild
-            >
+            <Button variant="goldOutline" size="lg" asChild>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                 WATCH ON YOUTUBE
               </a>
@@ -35,17 +29,11 @@ const FeaturedSingleSection = () => {
           {/* Right - Single Cover */}
           <div className="animate-fade-in order-1 md:order-2">
             <div className="relative">
-              <img
-                src={berealCover}
-                alt="Be Real Single Cover"
-                className="w-full h-auto"
-              />
+              <img alt="Be Real Single Cover" className="w-full h-auto" src="/lovable-uploads/61551ba7-443c-4a1d-b788-3a16d2d7e6d5.png" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FeaturedSingleSection;

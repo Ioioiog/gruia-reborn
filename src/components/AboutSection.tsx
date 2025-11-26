@@ -37,7 +37,7 @@ const AboutSection = () => {
               <div className="flex items-start gap-3 text-foreground">
                 <Music className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <div className="text-sm font-semibold text-primary">30+ YEARS</div>
+                  <div className="text-sm font-semibold text-primary">25+ YEARS</div>
                   <div className="text-sm text-foreground/80">OF MUSIC</div>
                 </div>
               </div>
