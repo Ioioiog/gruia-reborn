@@ -15,7 +15,7 @@ const AboutSection = () => {
           <div className="space-y-8 animate-fade-in order-1 md:order-2">
             <div>
               <h2 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-2 tracking-wide">
-                THIS IS GRUIA
+                THIS IS MIHAI GRUIA
               </h2>
               <div className="w-24 h-px bg-primary mt-4" />
             </div>
