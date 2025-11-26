@@ -1,29 +1,46 @@
 import { Button } from "@/components/ui/button";
-import berealCover from "@/assets/bereal-cover.jpg";
+import berealCover from "@/assets/be-real-cover.png";
+
 const FeaturedSingleSection = () => {
-  return <section className="relative py-24 px-6 bg-black">
-      <div className="max-w-3xl mx-auto">
-        <div className="space-y-8 animate-fade-in">
-          <div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase">
+  return (
+    <section className="relative py-24 px-6 bg-black">
+      <div className="max-w-3xl mx-auto space-y-12">
+        <h2 className="font-serif text-3xl md:text-4xl font-normal text-primary tracking-[0.15em] uppercase">
+          FEATURED SINGLE
+        </h2>
+
+        <div className="flex gap-8 items-start">
+          <div className="w-48 h-48 flex-shrink-0">
+            <img
+              src={berealCover}
+              alt="Be Real Single Cover"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="flex-1 space-y-6">
+            <div>
+              <h3 className="font-serif text-3xl font-bold text-primary tracking-wider uppercase">
                 BE REAL
-              </h2>
-              <div className="inline-block px-4 py-2 text-primary text-sm tracking-widest mt-4 italic">
+              </h3>
+              <div className="text-primary text-sm tracking-widest mt-2 italic">
                 OUT NOW
               </div>
             </div>
 
-            <p className="text-sm sm:text-base text-foreground/80 leading-relaxed max-w-lg">
+            <p className="text-foreground/90 text-base leading-relaxed">
               A song about dropping the masks and coming back to who you really are.
             </p>
-
-          <Button variant="goldOutline" size="lg" asChild>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              WATCH ON YOUTUBE
-            </a>
-          </Button>
+          </div>
         </div>
+
+        <Button variant="goldOutline" size="lg" className="w-full max-w-xs" asChild>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            WATCH ON YOUTUBE
+          </a>
+        </Button>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default FeaturedSingleSection;
