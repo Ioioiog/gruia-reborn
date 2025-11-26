@@ -17,8 +17,8 @@ const HeroSection = () => {
 REBORN
               </h1>
               
-              <p className="text-sm sm:text-base md:text-lg text-foreground/90 max-w-md leading-relaxed">
-                The most personal project<br />of my career.
+              <p className="text-sm sm:text-base text-foreground/90 max-w-md leading-relaxed md:text-2xl">
+                The most personal project of my career. <br />​
               </p>
 
               <div className="flex flex-col gap-3 sm:gap-4 pt-2">
