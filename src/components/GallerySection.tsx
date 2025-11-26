@@ -22,9 +22,9 @@ const GallerySection = () => {
   ];
 
   return (
-    <div className="py-24 px-6 bg-black">
-      <div className="max-w-4xl mx-auto space-y-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[180px] gap-3">
+    <div className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-black">
+      <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 md:space-y-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[120px] sm:auto-rows-[150px] md:auto-rows-[180px] gap-2 sm:gap-3">
           {galleryImages.map((image, index) => (
             <div 
               key={index} 
@@ -40,11 +40,11 @@ const GallerySection = () => {
           ))}
         </div>
 
-        <div className="space-y-4 text-center">
-          <p className="text-lg text-foreground/80 font-light leading-relaxed">
+        <div className="space-y-2 sm:space-y-4 text-center">
+          <p className="text-base sm:text-lg text-foreground/80 font-light leading-relaxed">
             Inside the studio. On the stage.
           </p>
-          <p className="text-base text-primary/90 italic font-serif">
+          <p className="text-sm sm:text-base text-primary/90 italic font-serif">
             Behind every song, there is a moment.
           </p>
         </div>
