@@ -1,6 +1,10 @@
 import { Mail, FileText, User, Music2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import ArtistBioModal from "./ArtistBioModal";
 const PressSection = () => {
+  const [bioOpen, setBioOpen] = useState(false);
+  
   return <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-4 mb-12">
@@ -22,10 +26,13 @@ const PressSection = () => {
 
           {/* Two Buttons */}
           <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-            <Button variant="goldOutline" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-center">
-                ARTIST BIO
-              </a>
+            <Button 
+              variant="goldOutline" 
+              size="lg" 
+              onClick={() => setBioOpen(true)}
+              className="text-center"
+            >
+              ARTIST BIO
             </Button>
             <Button variant="goldOutline" size="lg" asChild>
               <a href="#" target="_blank" rel="noopener noreferrer" className="text-center">
@@ -60,6 +67,8 @@ const PressSection = () => {
           </div>
         </div>
       </div>
+      
+      <ArtistBioModal open={bioOpen} onOpenChange={setBioOpen} />
     </section>;
 };
 export default PressSection;
