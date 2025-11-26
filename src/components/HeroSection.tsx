@@ -47,8 +47,7 @@ const HeroSection = () => {
               alt="Mihai Gruia"
               className="absolute inset-0 w-full h-full object-cover object-[65%_30%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent pointer-events-none z-10" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none z-10" />
           </div>
         </div>
       </div>
