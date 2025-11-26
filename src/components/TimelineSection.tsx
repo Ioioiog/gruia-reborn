@@ -26,14 +26,25 @@ const TimelineSection = () => {
           BEHIND THE REBorn
         </h2>
 
-        <div className="space-y-10 max-w-2xl mx-auto">
-            {timelineEvents.map((event, index) => <div key={index} className="space-y-2 animate-fade-in" style={{
-          animationDelay: `${index * 0.1}s`
-        }}>
+        <div className="relative max-w-2xl mx-auto pl-12">
+          {/* Timeline vertical line */}
+          <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-primary/20" />
+          
+          {/* Timeline events */}
+          <div className="space-y-10">
+            {timelineEvents.map((event, index) => (
+              <div key={index} className="relative space-y-2 animate-fade-in" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
+                {/* Timeline dot */}
+                <div className="absolute -left-12 top-1 w-5 h-5 rounded-full border-2 border-primary bg-background" />
+                
                 <p className="text-3xl font-serif text-primary tracking-wide">{event.year}</p>
                 <p className="text-base text-foreground/90 font-light">{event.title}</p>
                 <p className="text-sm text-foreground/60 leading-relaxed">{event.text}</p>
-              </div>)}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>;
