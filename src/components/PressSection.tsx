@@ -33,9 +33,7 @@ const PressSection = () => {
               </a>
             </Button>
             <Button variant="goldOutline" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                MANAGEMENT CONTACT
-              </a>
+              
             </Button>
           </div>
 
