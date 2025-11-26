@@ -20,8 +20,8 @@ const TimelineSection = () => {
     title: "This is GRUIA.",
     text: "Reborn as an independent artist."
   }];
-  return <div className="py-24 px-6 bg-black">
-      <div className="max-w-3xl mx-auto space-y-16">
+  return <div className="py-24 px-6 bg-black flex items-center min-h-full">
+      <div className="max-w-3xl mx-auto w-full space-y-16">
         <h2 className="font-serif text-3xl md:text-4xl font-normal text-primary tracking-[0.15em] uppercase">
           BEHIND THE REBorn
         </h2>
