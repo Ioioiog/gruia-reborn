@@ -23,17 +23,19 @@ const PressSection = () => {
           {/* Three Buttons */}
           <div className="grid md:grid-cols-3 gap-4">
             <Button variant="goldOutline" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-center">
                 ARTIST BIO
               </a>
             </Button>
             <Button variant="goldOutline" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-center">
                 PRESS PHOTOS
               </a>
             </Button>
             <Button variant="goldOutline" size="lg" asChild>
-              
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-center">
+                
+              </a>
             </Button>
           </div>
 
