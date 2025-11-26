@@ -14,16 +14,21 @@ const Index = () => {
       <div className="relative border-l border-r border-gold/20">
         <HeroSection />
         
-        {/* Second Row: About/This is Gruia (left) + Album + Tracklist (right) */}
+        {/* Second Row: About/This is Gruia */}
+        <section className="relative border-t border-gold/20">
+          <AboutSection />
+        </section>
+
+        {/* Third Row: Album (left) + Featured Single Be Real (right) */}
         <section className="relative border-t border-gold/20">
           <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
           <div className="grid md:grid-cols-2">
-            <AboutSection />
             <AlbumSection />
+            <FeaturedSingleSection />
           </div>
         </section>
 
-        {/* Third Row: Timeline (left) + Gallery Grid (right) */}
+        {/* Fourth Row: Timeline (left) + Gallery Grid (right) */}
         <section className="relative border-t border-gold/20">
           <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
           <div className="grid md:grid-cols-2">
@@ -31,8 +36,6 @@ const Index = () => {
             <GallerySection />
           </div>
         </section>
-
-        <FeaturedSingleSection />
         <PressSection />
         <Footer />
       </div>
