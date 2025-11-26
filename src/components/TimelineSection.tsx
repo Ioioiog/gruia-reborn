@@ -31,9 +31,9 @@ const TimelineSection = () => {
           <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-primary/20" />
           
           {/* Timeline events */}
-          <div className="space-y-10">
+          <div className="space-y-6">
             {timelineEvents.map((event, index) => (
-              <div key={index} className="relative space-y-2 animate-fade-in" style={{
+              <div key={index} className="relative space-y-1 animate-fade-in" style={{
                 animationDelay: `${index * 0.1}s`
               }}>
                 {/* Timeline dot */}
