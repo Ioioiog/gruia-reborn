@@ -1,18 +1,12 @@
 import gruiaPortrait from "@/assets/gruia-portrait-about.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section className="relative w-full overflow-hidden bg-black">
+  return <section className="relative w-full overflow-hidden bg-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-[1fr,1fr] gap-0 items-center">
           {/* Left - Portrait Image (mirrored from hero) */}
           <div className="relative h-[50vh] md:h-[70vh] animate-fade-in overflow-hidden">
-            <img 
-              src={gruiaPortrait} 
-              alt="Mihai Gruia Portrait" 
-              className="absolute inset-0 w-full h-full object-cover object-[30%_30%]"
-            />
+            <img src={gruiaPortrait} alt="Mihai Gruia Portrait" className="absolute inset-0 w-full h-full object-cover object-[30%_30%]" />
             <div className="absolute inset-0 bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none z-10" />
           </div>
 
@@ -35,7 +29,7 @@ const AboutSection = () => {
               <div className="flex items-start gap-3">
                 <User className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-xs text-primary tracking-widest uppercase">30+ Years</p>
+                  <p className="text-xs text-primary tracking-widest uppercase">25+ YEARS</p>
                   <p className="text-xs text-foreground/60 tracking-wide">Of Music</p>
                 </div>
               </div>
@@ -67,7 +61,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default AboutSection;
