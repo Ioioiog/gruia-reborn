@@ -5,6 +5,7 @@ import portraitImage from "@/assets/reborn-portrait-2.jpg";
 import bwPortrait from "@/assets/reborn-portrait-bw.png";
 import liveBw from "@/assets/live-performance-bw.jpg";
 import backstageBw from "@/assets/gruia-backstage-bw.jpg";
+import djBw from "@/assets/gruia-dj-bw.jpg";
 
 const GallerySection = () => {
   const galleryImages = [
@@ -14,6 +15,7 @@ const GallerySection = () => {
     { src: liveBw, alt: "Live performance black and white", span: "md:col-span-1 md:row-span-2" },
     { src: liveImage2, alt: "On stage", span: "md:col-span-2 md:row-span-1" },
     { src: backstageBw, alt: "Backstage moment", span: "md:col-span-1 md:row-span-1" },
+    { src: djBw, alt: "DJ performance", span: "md:col-span-1 md:row-span-1" },
   ];
 
   return (
