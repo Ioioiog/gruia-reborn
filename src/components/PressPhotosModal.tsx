@@ -2,7 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import studioKeys from "@/assets/gallery-studio-keys.jpg";
-import duoPortrait from "@/assets/gallery-duo-portrait.jpg";
+import duoPortrait from "@/assets/gallery-two-duo.jpg";
 import liveCrowd from "@/assets/gallery-live-crowd.jpg";
 import acousticSession from "@/assets/gallery-acoustic-session.jpg";
 import backstage from "@/assets/gallery-backstage.jpg";
