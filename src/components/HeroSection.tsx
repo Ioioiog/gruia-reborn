@@ -7,7 +7,7 @@ const HeroSection = () => {
           {/* Left - Text Content */}
           <div className="animate-fade-in space-y-6 py-20 md:py-0 md:pr-12">
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-[0.15em] text-primary uppercase leading-[1.1] lg:text-6xl">MIHAI GRUIA
-REBORN<br />REBORN
+REBORN
             </h1>
             
             <p className="text-base md:text-lg text-foreground/90 max-w-md leading-relaxed">
