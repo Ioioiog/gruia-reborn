@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-portrait.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen w-full overflow-hidden bg-black">
-      {/* Mobile: Full background image with overlay - fills entire screen */}
-      <div className="md:hidden fixed inset-0">
+      {/* Mobile: Full background image with overlay - fills entire section */}
+      <div className="md:hidden absolute inset-0">
         <img src={heroImage} alt="Mihai Gruia" className="w-full h-full object-cover object-[65%_30%]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
       </div>
