@@ -2,14 +2,6 @@ import { Button } from "@/components/ui/button";
 import albumCover from "@/assets/reborn-cover.jpg";
 
 const AlbumSection = () => {
-  const tracks = [
-    { number: "01", name: "Be Real" },
-    { number: "02", name: "REBORN" },
-    { number: "03", name: "Track Name" },
-    { number: "04", name: "Track Name" },
-    { number: "05", name: "Track Name" },
-  ];
-
   return (
     <div className="py-24 px-6 bg-black">
       <div className="max-w-3xl mx-auto space-y-12">
@@ -26,13 +18,16 @@ const AlbumSection = () => {
             />
           </div>
 
-          <div className="flex-1 space-y-3">
-            {tracks.map((track) => (
-              <div key={track.number} className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors">
-                <span className="text-primary font-mono text-sm">{track.number}</span>
-                <span className="text-sm tracking-wide">· {track.name}</span>
-              </div>
-            ))}
+          <div className="flex-1 space-y-6">
+            <p className="text-foreground/90 text-lg leading-relaxed">
+              "Reborn" is not just an album.
+            </p>
+            <p className="text-foreground/90 text-lg leading-relaxed">
+              It is the moment I found myself again as an artist, and as a human being.
+            </p>
+            <p className="text-primary text-lg font-serif tracking-wider">
+              This is GRUIA. Reborn.
+            </p>
           </div>
         </div>
 
