@@ -1,50 +1,46 @@
 import { Button } from "@/components/ui/button";
 import berealCover from "@/assets/bereal-cover.jpg";
-import { Play } from "lucide-react";
 
 const FeaturedSingleSection = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-black to-secondary">
+    <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left - Single Cover */}
-          <div className="animate-fade-in">
-            <div className="relative">
-              <img
-                src={berealCover}
-                alt="Be Real Single Cover"
-                className="w-full h-auto border border-gold/40 shadow-2xl"
-              />
-              <div className="absolute inset-0 border border-gold/20 translate-x-3 translate-y-3 -z-10" />
-            </div>
-          </div>
-
-          {/* Right - Text */}
-          <div className="space-y-8 animate-fade-in">
+        <div className="grid md:grid-cols-[1.2fr,1fr] gap-12 md:gap-16 items-center">
+          {/* Left - Text */}
+          <div className="space-y-8 animate-fade-in order-2 md:order-1">
             <div>
-              <div className="inline-block px-4 py-1 border border-primary text-primary text-sm tracking-widest mb-4">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase">
+                BE REAL
+              </h2>
+              <div className="inline-block px-4 py-2 text-primary text-sm tracking-widest mt-4 italic">
                 OUT NOW
               </div>
-              <h2 className="font-serif text-5xl md:text-6xl font-bold text-foreground tracking-wide">
-                Be Real
-              </h2>
-              <div className="w-24 h-px bg-primary mt-4" />
             </div>
 
-            <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+            <p className="text-sm sm:text-base text-foreground/80 leading-relaxed max-w-lg">
               A song about dropping the masks and coming back to who you really are.
             </p>
 
             <Button 
-              variant="gold" 
+              variant="goldOutline" 
               size="lg"
               asChild
             >
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                <Play className="mr-2 h-5 w-5" />
                 WATCH ON YOUTUBE
               </a>
             </Button>
+          </div>
+
+          {/* Right - Single Cover */}
+          <div className="animate-fade-in order-1 md:order-2">
+            <div className="relative">
+              <img
+                src={berealCover}
+                alt="Be Real Single Cover"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
