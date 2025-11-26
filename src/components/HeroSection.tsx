@@ -41,12 +41,12 @@ const HeroSection = () => {
           </div>
 
           {/* Right - Portrait Image */}
-          <div className="relative h-[60vh] md:h-screen animate-fade-in">
+          <div className="relative h-[60vh] md:h-screen animate-fade-in flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black pointer-events-none z-10" />
             <img
               src={heroImage}
               alt="Mihai Gruia"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="w-full h-full object-contain object-center"
             />
           </div>
         </div>
