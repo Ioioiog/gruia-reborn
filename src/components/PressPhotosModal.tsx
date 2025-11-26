@@ -18,7 +18,7 @@ interface PressPhotosModalProps {
 
 const pressPhotos = [
   { src: studioKeys, title: "Mihai Gruia - In The Studio", category: "Studio" },
-  { src: duoPortrait, title: "Mihai Gruia - Duo Portrait", category: "Portrait" },
+  { src: duoPortrait, title: "Mihai Gruia - TWO", category: "Portrait" },
   { src: liveCrowd, title: "Mihai Gruia - Live Performance with Crowd", category: "Live" },
   { src: acousticSession, title: "Mihai Gruia - Acoustic Session", category: "Studio" },
   { src: backstage, title: "Mihai Gruia - Backstage Moment", category: "Backstage" },
