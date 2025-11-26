@@ -7,27 +7,27 @@ const PressSection = () => {
   const [bioOpen, setBioOpen] = useState(false);
   const [photosOpen, setPhotosOpen] = useState(false);
   
-  return <section className="py-24 px-6 bg-black border-t border-gold/20">
+  return <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase">
+        <div className="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary tracking-[0.1em] sm:tracking-[0.15em] uppercase">
             PRESS & BOOKINGS
           </h2>
-          <p className="text-foreground/70 text-sm">
+          <p className="text-foreground/70 text-xs sm:text-sm">
             For interviews, collaborations or bookings:
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-12 animate-fade-in">
+        <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 animate-fade-in">
           {/* Contact Email */}
           <div className="text-center">
-            <a className="text-primary hover:text-primary/80 transition-colors text-lg tracking-wide" href="mailto:me@mihaigruia.com">
+            <a className="text-primary hover:text-primary/80 transition-colors text-base sm:text-lg tracking-wide break-all" href="mailto:me@mihaigruia.com">
               me@mihaigruia.com
             </a>
           </div>
 
           {/* Two Buttons */}
-          <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-2xl mx-auto">
             <Button 
               variant="goldOutline" 
               size="lg" 
@@ -47,25 +47,25 @@ const PressSection = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center items-center gap-6 pt-4">
-            <a href="https://open.spotify.com/artist/6phLlgPzHgj6RxT3Jz4UEu?si=nrLnycUcRL6KyX5UwpgEVw" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors" aria-label="Spotify">
-              <Music2 className="h-6 w-6" />
+          <div className="flex justify-center items-center gap-4 sm:gap-6 pt-4 flex-wrap">
+            <a href="https://open.spotify.com/artist/6phLlgPzHgj6RxT3Jz4UEu?si=nrLnycUcRL6KyX5UwpgEVw" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors p-2" aria-label="Spotify">
+              <Music2 className="h-5 w-5 sm:h-6 sm:w-6" />
             </a>
-            <a href="https://music.apple.com/us/artist/mihai-gruia/1847803390" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors" aria-label="Apple Music">
-              <Music2 className="h-6 w-6" />
+            <a href="https://music.apple.com/us/artist/mihai-gruia/1847803390" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors p-2" aria-label="Apple Music">
+              <Music2 className="h-5 w-5 sm:h-6 sm:w-6" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors" aria-label="Instagram">
-              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors p-2" aria-label="Instagram">
+              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors" aria-label="YouTube">
-              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors p-2" aria-label="YouTube">
+              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors" aria-label="TikTok">
-              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 transition-colors p-2" aria-label="TikTok">
+              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
               </svg>
             </a>
