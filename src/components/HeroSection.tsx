@@ -2,10 +2,16 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-portrait.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen w-full overflow-hidden bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-0">
-        <div className="grid md:grid-cols-[1fr,1fr] gap-0 min-h-screen items-center">
-          {/* Left - Text Content */}
-          <div className="animate-fade-in space-y-4 sm:space-y-6 py-12 sm:py-16 md:py-0 md:pr-12">
+      {/* Mobile: Full background image with overlay */}
+      <div className="md:hidden absolute inset-0">
+        <img src={heroImage} alt="Mihai Gruia" className="w-full h-full object-cover object-[80%_30%]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-0 relative z-10">
+        <div className="grid md:grid-cols-[1fr,1fr] gap-0 min-h-screen items-end md:items-center">
+          {/* Text Content - overlaid on mobile, left column on desktop */}
+          <div className="animate-fade-in space-y-4 sm:space-y-6 py-12 pb-16 md:py-0 md:pr-12">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.1em] sm:tracking-[0.15em] text-primary uppercase leading-[1.1]">MIHAI GRUIA
 REBORN
             </h1>
@@ -28,8 +34,8 @@ REBORN
             </div>
           </div>
 
-          {/* Right - Portrait Image */}
-          <div className="relative h-[50vh] sm:h-[60vh] md:h-screen animate-fade-in overflow-hidden">
+          {/* Desktop: Portrait Image (hidden on mobile) */}
+          <div className="relative h-screen animate-fade-in overflow-hidden hidden md:block">
             <img src={heroImage} alt="Mihai Gruia" className="absolute inset-0 w-full h-full object-cover object-[70%_30%]" />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none z-10" />
           </div>
