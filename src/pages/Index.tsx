@@ -10,14 +10,17 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <HeroSection />
-      <AboutSection />
-      <AlbumSection />
-      <GallerySection />
-      <TimelineSection />
-      <FeaturedSingleSection />
-      <PressSection />
-      <Footer />
+      {/* Grid Container with Vertical Borders */}
+      <div className="relative border-l border-r border-gold/20">
+        <HeroSection />
+        <AboutSection />
+        <AlbumSection />
+        <GallerySection />
+        <TimelineSection />
+        <FeaturedSingleSection />
+        <PressSection />
+        <Footer />
+      </div>
     </div>
   );
 };

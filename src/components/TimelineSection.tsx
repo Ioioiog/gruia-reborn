@@ -21,7 +21,9 @@ const TimelineSection = () => {
     title: "This is GRUIA.",
     text: "Reborn as an independent artist."
   }];
-  return <section className="py-24 px-6 bg-black border-t border-gold/20">
+  return <section className="relative py-24 px-6 bg-black border-t border-gold/20">
+      {/* Vertical divider for grid */}
+      <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
       <div className="max-w-7xl mx-auto">
         <div className="space-y-4 mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase">
