@@ -1,14 +1,14 @@
 import gruiaPortrait from "@/assets/gruia-portrait-about.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
 const AboutSection = () => {
-  return <section className="relative w-full overflow-hidden bg-black">
+  return <section className="relative w-full overflow-hidden bg-black min-h-screen md:min-h-0">
       {/* Mobile: Full background image with overlay - fills entire section */}
       <div className="md:hidden absolute inset-0">
         <img src={gruiaPortrait} alt="Mihai Gruia Portrait" className="w-full h-full object-cover object-[50%_30%]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
       </div>
 
-      <div className="relative z-10 min-h-screen flex items-end md:items-center">
+      <div className="relative z-10 min-h-screen md:min-h-0 flex items-end md:items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
           <div className="grid md:grid-cols-[1fr,1fr] gap-0 md:items-center">
             {/* Desktop: Portrait Image (hidden on mobile) */}
