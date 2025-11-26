@@ -2,8 +2,10 @@ import { Mail, FileText, User, Music2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import ArtistBioModal from "./ArtistBioModal";
+import PressPhotosModal from "./PressPhotosModal";
 const PressSection = () => {
   const [bioOpen, setBioOpen] = useState(false);
+  const [photosOpen, setPhotosOpen] = useState(false);
   
   return <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
@@ -34,10 +36,13 @@ const PressSection = () => {
             >
               ARTIST BIO
             </Button>
-            <Button variant="goldOutline" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-center">
-                PRESS PHOTOS
-              </a>
+            <Button 
+              variant="goldOutline" 
+              size="lg" 
+              onClick={() => setPhotosOpen(true)}
+              className="text-center"
+            >
+              PRESS PHOTOS
             </Button>
           </div>
 
@@ -69,6 +74,7 @@ const PressSection = () => {
       </div>
       
       <ArtistBioModal open={bioOpen} onOpenChange={setBioOpen} />
+      <PressPhotosModal open={photosOpen} onOpenChange={setPhotosOpen} />
     </section>;
 };
 export default PressSection;
