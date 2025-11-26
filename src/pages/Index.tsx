@@ -13,8 +13,10 @@ const Index = () => {
       {/* Grid Container with Vertical Borders */}
       <div className="relative border-l border-r border-gold/20">
         <HeroSection />
-        <AboutSection />
+        {/* Second Row: Album (left) + About (right) */}
         <AlbumSection />
+        <AboutSection />
+        {/* Third Row: Behind the Rebirth title (left) + Cinematic text (right) */}
         <GallerySection />
         <TimelineSection />
         <FeaturedSingleSection />
