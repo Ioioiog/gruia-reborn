@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-portrait.jpg";
+import heroImage from "@/assets/hero-portrait-black-bg.jpg";
 
 const HeroSection = () => {
   return (
@@ -47,7 +47,6 @@ const HeroSection = () => {
               alt="Mihai Gruia"
               className="absolute inset-0 w-full h-full object-cover object-[70%_30%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none z-10" />
           </div>
         </div>
       </div>
