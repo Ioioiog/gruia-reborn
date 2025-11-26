@@ -1,64 +1,60 @@
 import { Button } from "@/components/ui/button";
 import albumCover from "@/assets/reborn-cover.jpg";
-import { Music2 } from "lucide-react";
 
 const AlbumSection = () => {
-  return (
-    <section className="py-24 px-6 bg-secondary">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left - Album Cover */}
-          <div className="animate-fade-in order-2 md:order-1">
-            <img
-              src={albumCover}
-              alt="REBORN Album Cover"
-              className="w-full h-auto border border-gold/40 shadow-2xl"
-            />
-          </div>
+  const tracks = [
+    { number: "01", title: "Be Real" },
+    { number: "02", title: "REBORN" },
+    { number: "03", title: "Track Name" },
+  ];
 
-          {/* Right - Text */}
-          <div className="space-y-8 animate-fade-in order-1 md:order-2">
+  return (
+    <section className="py-24 px-6 bg-black border-t border-gold/20">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-[1fr,1.5fr] gap-12 md:gap-20 items-start">
+          {/* Left - Album Cover & Tracklist */}
+          <div className="animate-fade-in space-y-8">
             <div>
-              <h2 className="font-serif text-5xl md:text-6xl font-bold text-foreground tracking-wide">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase mb-8">
                 THE REBORN ALBUM
               </h2>
-              <div className="w-24 h-px bg-primary mt-4" />
+              
+              <div className="relative">
+                <img
+                  src={albumCover}
+                  alt="REBORN Album Cover"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
 
-            <div className="space-y-6 text-foreground/80 leading-relaxed max-w-xl">
-              <p>
-                "Reborn" is the sound of starting over with everything I've learned along the way. It's the moment I stopped chasing expectations and started telling my own truth.
-              </p>
+            {/* Tracklist */}
+            <div className="space-y-3">
+              {tracks.map((track) => (
+                <div 
+                  key={track.number}
+                  className="flex items-center gap-4 text-foreground/80 hover:text-primary transition-colors py-2 border-b border-gold/10"
+                >
+                  <span className="text-primary font-mono text-sm">{track.number}</span>
+                  <span className="text-sm tracking-wide">· {track.title}</span>
+                </div>
+              ))}
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button 
-                variant="gold" 
-                size="lg"
-                asChild
-              >
-                <a href="https://open.spotify.com/album/4dnUXGfC2sFXLmAMalo8Bs" target="_blank" rel="noopener noreferrer">
-                  <Music2 className="mr-2 h-5 w-5" />
-                  LISTEN ON SPOTIFY
-                </a>
-              </Button>
-              <Button 
-                variant="goldOutline" 
-                size="lg"
-                asChild
-              >
-                <a href="http://itunes.apple.com/album/id1852252958?ls=1&app=itunes" target="_blank" rel="noopener noreferrer">
-                  <Music2 className="mr-2 h-5 w-5" />
-                  LISTEN ON APPLE MUSIC
-                </a>
-              </Button>
-            </div>
-
-            <p className="text-sm text-muted-foreground italic pt-4">
-              Also available on iTunes and all major streaming platforms.
-            </p>
+            <Button 
+              variant="goldOutline" 
+              size="lg"
+              className="w-full"
+              asChild
+            >
+              <a href="https://open.spotify.com/album/4dnUXGfC2sFXLmAMalo8Bs" target="_blank" rel="noopener noreferrer">
+                LISTEN ON SPOTIFY
+              </a>
+            </Button>
           </div>
+
+          {/* Right - Empty space or can add content later */}
+          <div className="hidden md:block" />
         </div>
       </div>
     </section>

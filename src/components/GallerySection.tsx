@@ -4,46 +4,66 @@ import studio from "@/assets/reborn-studio.jpg";
 
 const GallerySection = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-secondary to-black">
+    <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground tracking-wide">
+        <div className="space-y-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase">
             BEHIND THE REBIRTH
           </h2>
-          <div className="w-24 h-px bg-primary mx-auto" />
         </div>
 
-        {/* Image Grid */}
-        <div className="grid md:grid-cols-3 gap-6 animate-fade-in">
-          <div className="group relative overflow-hidden border border-gold/40">
+        {/* Image Grid - 3x2 */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 animate-fade-in">
+          <div className="group relative overflow-hidden aspect-square">
             <img
               src={live1}
-              alt="Live Performance"
-              className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Studio session"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
           
-          <div className="group relative overflow-hidden border border-gold/40">
-            <img
-              src={bereal}
-              alt="Behind The Scenes"
-              className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          </div>
-          
-          <div className="group relative overflow-hidden border border-gold/40">
+          <div className="group relative overflow-hidden aspect-square">
             <img
               src={studio}
-              alt="In The Studio"
-              className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Piano performance"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
+          
+          <div className="group relative overflow-hidden aspect-square">
+            <img
+              src={bereal}
+              alt="Be Real cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <div className="group relative overflow-hidden aspect-square">
+            <img
+              src={live1}
+              alt="Recording session"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div className="group relative overflow-hidden aspect-square">
+            <img
+              src={studio}
+              alt="Live on stage"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div className="group relative overflow-hidden aspect-square">
+            <img
+              src={bereal}
+              alt="Performance moment"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
           </div>
         </div>
 
-        <p className="text-center text-lg text-muted-foreground italic tracking-wide">
+        <p className="text-center text-sm sm:text-base text-muted-foreground italic tracking-wide">
           Inside the studio. On the stage. Behind every song, there is a moment.
         </p>
       </div>

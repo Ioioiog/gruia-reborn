@@ -3,23 +3,22 @@ import { Music, Mic2, User, Sparkles } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-black to-secondary">
+    <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid md:grid-cols-[1fr,1.2fr] gap-12 md:gap-16 items-center">
           {/* Left - Portrait */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in order-2 md:order-1">
             <div className="relative">
               <img
                 src={portraitImage}
                 alt="Mihai Gruia Portrait"
-                className="w-full h-auto border border-gold/40 shadow-2xl"
+                className="w-full h-auto"
               />
-              <div className="absolute inset-0 border border-gold/20 -translate-x-3 -translate-y-3 -z-10" />
             </div>
           </div>
 
           {/* Right - Text */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8 animate-fade-in order-1 md:order-2">
             <div>
               <h2 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-2 tracking-wide">
                 THIS IS GRUIA
@@ -40,22 +39,34 @@ const AboutSection = () => {
             </div>
 
             {/* Icon List */}
-            <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className="flex items-center gap-3 text-foreground">
-                <Music className="h-5 w-5 text-primary" />
-                <span className="text-sm tracking-wide">20+ years in music</span>
+            <div className="grid grid-cols-2 gap-6 pt-6">
+              <div className="flex items-start gap-3 text-foreground">
+                <Music className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <div className="text-sm font-semibold text-primary">30+ YEARS</div>
+                  <div className="text-sm text-foreground/80">OF MUSIC</div>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-foreground">
-                <User className="h-5 w-5 text-primary" />
-                <span className="text-sm tracking-wide">Former member of Akcent</span>
+              <div className="flex items-start gap-3 text-foreground">
+                <Mic2 className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <div className="text-sm font-semibold text-primary">MUSIC</div>
+                  <div className="text-sm text-foreground/80">PRODUCER</div>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-foreground">
-                <Mic2 className="h-5 w-5 text-primary" />
-                <span className="text-sm tracking-wide">Music producer & songwriter</span>
+              <div className="flex items-start gap-3 text-foreground">
+                <User className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <div className="text-sm font-semibold text-primary">FORMER MEMBER</div>
+                  <div className="text-sm text-foreground/80">OF AKCENT</div>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-foreground">
-                <Sparkles className="h-5 w-5 text-primary" />
-                <span className="text-sm tracking-wide">Independent artist</span>
+              <div className="flex items-start gap-3 text-foreground">
+                <Sparkles className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <div className="text-sm font-semibold text-primary">INDEPENDENT</div>
+                  <div className="text-sm text-foreground/80">ARTIST</div>
+                </div>
               </div>
             </div>
           </div>
