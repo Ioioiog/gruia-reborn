@@ -7,11 +7,11 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Portrait Image */}
-          <div className="relative w-full max-w-md mx-auto aspect-square overflow-hidden rounded-sm border border-primary/20">
+          <div className="relative w-full max-w-md mx-auto">
             <img 
               src={gruiaPortrait} 
               alt="Mihai Gruia Portrait" 
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
 
