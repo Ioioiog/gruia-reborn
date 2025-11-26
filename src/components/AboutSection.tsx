@@ -1,9 +1,18 @@
-import portraitImage from "@/assets/reborn-portrait.jpg";
+import gruiaPortrait from "@/assets/gruia-portrait-about.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
+
 const AboutSection = () => {
   return (
     <div className="py-24 px-6 bg-black">
       <div className="max-w-3xl mx-auto space-y-12">
+        {/* Portrait Image */}
+        <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-sm border border-primary/20">
+          <img 
+            src={gruiaPortrait} 
+            alt="Mihai Gruia Portrait" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         <h2 className="font-serif text-3xl md:text-4xl font-normal text-primary tracking-[0.15em] uppercase">
           THIS IS GRUIA
         </h2>
