@@ -1,73 +1,57 @@
 import portraitImage from "@/assets/reborn-portrait.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
 const AboutSection = () => {
-  return <section className="relative py-24 px-6 bg-black border-t border-gold/20">
-      {/* Vertical divider for grid */}
-      <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-[1fr,1.2fr] gap-12 md:gap-16 items-center">
-          {/* Left - Portrait */}
-          <div className="animate-fade-in order-2 md:order-1">
-            <div className="relative">
-              <img alt="Mihai Gruia Portrait" className="w-full h-auto" src="/lovable-uploads/3af33372-0907-47f3-9301-3cd91563024b.jpg" />
+  return (
+    <div className="py-24 px-6 bg-black">
+      <div className="max-w-3xl mx-auto space-y-12">
+        <h2 className="font-serif text-3xl md:text-4xl font-normal text-primary tracking-[0.15em] uppercase">
+          THIS IS GRUIA
+        </h2>
+
+        <div className="space-y-6 text-foreground/80 leading-relaxed text-sm">
+          <p>
+            I've lived my whole life inside the music industry — with its rights, its limits, and everything in between. Reborn is the album where I finally tell my story without filters.
+          </p>
+          <p>
+            I found myself again — as an artist, and as a human being.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 gap-8">
+          <div className="flex items-start gap-3">
+            <User className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <div>
+              <p className="text-xs text-primary tracking-widest uppercase">30+ Years</p>
+              <p className="text-xs text-foreground/60 tracking-wide">Of Music</p>
             </div>
           </div>
 
-          {/* Right - Text */}
-          <div className="space-y-8 animate-fade-in order-1 md:order-2">
+          <div className="flex items-start gap-3">
+            <Music className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
             <div>
-              <h2 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-2 tracking-wide">
-                THIS IS MIHAI GRUIA
-              </h2>
-              <div className="w-24 h-px bg-primary mt-4" />
+              <p className="text-xs text-primary tracking-widest uppercase">Music</p>
+              <p className="text-xs text-foreground/60 tracking-wide">Producer</p>
             </div>
+          </div>
 
-            <div className="space-y-6 text-foreground/80 leading-relaxed">
-              <p>
-                I've lived my whole life inside the music industry — with its lights, its limits, and everything in between.
-              </p>
-              <p>
-                Today, for the first time, I have the freedom to create music exactly the way I feel it.
-              </p>
-              <p>
-                "Reborn" is not just an album. It is the moment I found myself again — as an artist, and as a human being.
-              </p>
+          <div className="flex items-start gap-3">
+            <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <div>
+              <p className="text-xs text-primary tracking-widest uppercase">Former Member</p>
+              <p className="text-xs text-foreground/60 tracking-wide">Of Akcent</p>
             </div>
+          </div>
 
-            {/* Icon List */}
-            <div className="grid grid-cols-2 gap-6 pt-6">
-              <div className="flex items-start gap-3 text-foreground">
-                <Music className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <div className="text-sm font-semibold text-primary">25+ YEARS</div>
-                  <div className="text-sm text-foreground/80">OF MUSIC</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 text-foreground">
-                <Mic2 className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <div className="text-sm font-semibold text-primary">MUSIC</div>
-                  <div className="text-sm text-foreground/80">PRODUCER</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 text-foreground">
-                <User className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <div className="text-sm font-semibold text-primary">FORMER MEMBER</div>
-                  <div className="text-sm text-foreground/80">OF AKCENT</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 text-foreground">
-                <Sparkles className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <div className="text-sm font-semibold text-primary">INDEPENDENT</div>
-                  <div className="text-sm text-foreground/80">ARTIST</div>
-                </div>
-              </div>
+          <div className="flex items-start gap-3">
+            <Mic2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <div>
+              <p className="text-xs text-primary tracking-widest uppercase">Independent</p>
+              <p className="text-xs text-foreground/60 tracking-wide">Artist</p>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </div>
+  );
 };
 export default AboutSection;

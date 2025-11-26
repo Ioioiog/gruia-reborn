@@ -2,60 +2,52 @@ import { Button } from "@/components/ui/button";
 import albumCover from "@/assets/reborn-cover.jpg";
 
 const AlbumSection = () => {
+  const tracks = [
+    { number: "01", name: "Be Real" },
+    { number: "02", name: "REBORN" },
+    { number: "03", name: "Track Name" },
+    { number: "04", name: "Track Name" },
+    { number: "05", name: "Track Name" },
+  ];
+
   return (
-    <section className="relative py-24 px-6 bg-black border-t border-gold/20">
-      {/* Vertical divider for grid */}
-      <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-[1fr,1.2fr] gap-12 md:gap-16 items-center">
-          {/* Left - Album Cover */}
-          <div className="animate-fade-in order-2 md:order-1">
-            <div className="relative">
-              <img
-                src={albumCover}
-                alt="REBORN Album Cover"
-                className="w-full h-auto"
-              />
-            </div>
+    <div className="py-24 px-6 bg-black">
+      <div className="max-w-3xl mx-auto space-y-12">
+        <h2 className="font-serif text-3xl md:text-4xl font-normal text-primary tracking-[0.15em] uppercase">
+          THE REBORN ALBUM
+        </h2>
+
+        <div className="flex gap-8 items-start">
+          <div className="w-48 h-48 flex-shrink-0">
+            <img
+              src={albumCover}
+              alt="REBORN Album Cover"
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          {/* Right - Story & Buttons */}
-          <div className="space-y-8 animate-fade-in order-1 md:order-2">
-            <div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase">
-                THE REBORN ALBUM
-              </h2>
-            </div>
-
-            <div className="space-y-6 text-foreground/80 leading-relaxed">
-              <p>
-                "Reborn" is the sound of starting over with everything I've learned along the way.
-              </p>
-              <p>
-                It's the moment I stopped chasing expectations and started telling my own truth.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <Button 
-                variant="goldOutline" 
-                size="lg"
-                className="w-full"
-                asChild
-              >
-                <a href="https://open.spotify.com/album/4dnUXGfC2sFXLmAMalo8Bs" target="_blank" rel="noopener noreferrer">
-                  LISTEN ON SPOTIFY
-                </a>
-              </Button>
-              
-              <p className="text-xs text-foreground/60 text-center tracking-wide">
-                Also available on Apple Music, iTunes and all major platforms.
-              </p>
-            </div>
+          <div className="flex-1 space-y-3">
+            {tracks.map((track) => (
+              <div key={track.number} className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors">
+                <span className="text-primary font-mono text-sm">{track.number}</span>
+                <span className="text-sm tracking-wide">· {track.name}</span>
+              </div>
+            ))}
           </div>
         </div>
+
+        <Button 
+          variant="goldOutline" 
+          size="lg"
+          className="w-full max-w-xs"
+          asChild
+        >
+          <a href="https://open.spotify.com/album/4dnUXGfC2sFXLmAMalo8Bs" target="_blank" rel="noopener noreferrer">
+            LISTEN ON SPOTIFY
+          </a>
+        </Button>
       </div>
-    </section>
+    </div>
   );
 };
 

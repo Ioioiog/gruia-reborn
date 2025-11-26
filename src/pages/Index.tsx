@@ -13,12 +13,25 @@ const Index = () => {
       {/* Grid Container with Vertical Borders */}
       <div className="relative border-l border-r border-gold/20">
         <HeroSection />
-        {/* Second Row: Album (left) + About (right) */}
-        <AlbumSection />
-        <AboutSection />
-        {/* Third Row: Behind the Rebirth title (left) + Cinematic text (right) */}
-        <GallerySection />
-        <TimelineSection />
+        
+        {/* Second Row: Album + Tracklist (left) + About/This is Gruia (right) */}
+        <section className="relative border-t border-gold/20">
+          <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
+          <div className="grid md:grid-cols-2">
+            <AlbumSection />
+            <AboutSection />
+          </div>
+        </section>
+
+        {/* Third Row: Timeline (left) + Gallery Grid (right) */}
+        <section className="relative border-t border-gold/20">
+          <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20 hidden md:block -translate-x-1/2" />
+          <div className="grid md:grid-cols-2">
+            <TimelineSection />
+            <GallerySection />
+          </div>
+        </section>
+
         <FeaturedSingleSection />
         <PressSection />
         <Footer />
