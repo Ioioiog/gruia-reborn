@@ -25,17 +25,9 @@ const AlbumSection = () => {
               <div className="w-24 h-px bg-primary mt-4" />
             </div>
 
-            <div className="space-y-6 text-foreground/80 leading-relaxed">
+            <div className="space-y-6 text-foreground/80 leading-relaxed max-w-xl">
               <p>
-                REBORN is more than an album — it's a declaration of independence, a testament to 
-                creative freedom, and a collection of stories that I've been waiting years to tell.
-              </p>
-              <p>
-                Every track is a piece of my journey. From the highs of global tours to the introspective 
-                moments in the studio, this is the sound of transformation. Raw. Cinematic. Honest.
-              </p>
-              <p>
-                This is music without boundaries. This is me, fully realized. This is REBORN.
+                "Reborn" is the sound of starting over with everything I've learned along the way. It's the moment I stopped chasing expectations and started telling my own truth.
               </p>
             </div>
 
@@ -46,7 +38,7 @@ const AlbumSection = () => {
                 size="lg"
                 asChild
               >
-                <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://open.spotify.com/album/4dnUXGfC2sFXLmAMalo8Bs" target="_blank" rel="noopener noreferrer">
                   <Music2 className="mr-2 h-5 w-5" />
                   LISTEN ON SPOTIFY
                 </a>
@@ -56,15 +48,15 @@ const AlbumSection = () => {
                 size="lg"
                 asChild
               >
-                <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer">
+                <a href="http://itunes.apple.com/album/id1852252958?ls=1&app=itunes" target="_blank" rel="noopener noreferrer">
                   <Music2 className="mr-2 h-5 w-5" />
-                  APPLE MUSIC
+                  LISTEN ON APPLE MUSIC
                 </a>
               </Button>
             </div>
 
             <p className="text-sm text-muted-foreground italic pt-4">
-              Also available on iTunes and all major platforms
+              Also available on iTunes and all major streaming platforms.
             </p>
           </div>
         </div>

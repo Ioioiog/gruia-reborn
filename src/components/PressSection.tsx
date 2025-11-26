@@ -57,23 +57,13 @@ const PressSection = () => {
               <h3 className="font-serif text-2xl font-bold text-foreground mb-3">Follow</h3>
               <div className="flex flex-col gap-2">
                 <Button variant="link" asChild>
-                  <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://open.spotify.com/artist/6phLlgPzHgj6RxT3Jz4UEu?si=nrLnycUcRL6KyX5UwpgEVw" target="_blank" rel="noopener noreferrer">
                     Spotify
                   </a>
                 </Button>
                 <Button variant="link" asChild>
-                  <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://music.apple.com/us/artist/mihai-gruia/1847803390" target="_blank" rel="noopener noreferrer">
                     Apple Music
-                  </a>
-                </Button>
-                <Button variant="link" asChild>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                  </a>
-                </Button>
-                <Button variant="link" asChild>
-                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                    YouTube
                   </a>
                 </Button>
               </div>
