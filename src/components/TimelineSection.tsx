@@ -1,5 +1,3 @@
-import rebornPortraitBw from "@/assets/reborn-portrait-bw.png";
-
 const TimelineSection = () => {
   const timelineEvents = [
     {
@@ -36,17 +34,7 @@ const TimelineSection = () => {
           BEHIND THE REBIRTH
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-12 items-start">
-          <div className="w-full md:w-56 h-80 flex-shrink-0">
-            <img
-              src={rebornPortraitBw}
-              alt="Mihai Gruia Portrait"
-              className="w-full h-full object-cover grayscale"
-            />
-            <p className="text-xs text-foreground/40 mt-2 text-center">Mihai Gruia Portrait</p>
-          </div>
-
-          <div className="space-y-10 flex-1">
+        <div className="space-y-10 max-w-2xl mx-auto">
             {timelineEvents.map((event, index) => (
               <div key={index} className="space-y-2 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <p className="text-3xl font-serif text-primary tracking-wide">{event.year}</p>
@@ -54,7 +42,6 @@ const TimelineSection = () => {
                 <p className="text-sm text-foreground/60 leading-relaxed">{event.text}</p>
               </div>
             ))}
-          </div>
         </div>
       </div>
     </div>
