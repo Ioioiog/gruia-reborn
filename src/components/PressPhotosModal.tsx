@@ -1,15 +1,15 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroPortrait from "@/assets/hero-portrait.jpg";
-import gruiaPortrait from "@/assets/gruia-portrait-about.jpg";
-import rebornPortrait from "@/assets/reborn-portrait.jpg";
-import rebornPortrait2 from "@/assets/reborn-portrait-2.jpg";
-import rebornPortraitBw from "@/assets/reborn-portrait-bw.png";
-import livePerformanceBw from "@/assets/live-performance-bw.jpg";
-import rebornLive1 from "@/assets/reborn-live-1.jpg";
-import rebornLive2 from "@/assets/reborn-live-2.jpg";
-import rebornStudio from "@/assets/reborn-studio.jpg";
+import studioKeys from "@/assets/gallery-studio-keys.jpg";
+import duoPortrait from "@/assets/gallery-duo-portrait.jpg";
+import liveCrowd from "@/assets/gallery-live-crowd.jpg";
+import acousticSession from "@/assets/gallery-acoustic-session.jpg";
+import backstage from "@/assets/gallery-backstage.jpg";
+import dj from "@/assets/gallery-dj.jpg";
+import stagePerformance from "@/assets/gallery-stage-performance.jpg";
+import studioPortrait from "@/assets/gallery-studio-portrait.jpg";
+import akcentEarly from "@/assets/gallery-akcent-early.jpg";
 
 interface PressPhotosModalProps {
   open: boolean;
@@ -17,15 +17,15 @@ interface PressPhotosModalProps {
 }
 
 const pressPhotos = [
-  { src: heroPortrait, title: "Mihai Gruia - Portrait", category: "Portrait" },
-  { src: gruiaPortrait, title: "Mihai Gruia - Studio Portrait", category: "Portrait" },
-  { src: rebornPortrait, title: "Reborn - Album Portrait", category: "Album" },
-  { src: rebornPortrait2, title: "Reborn - Portrait 2", category: "Album" },
-  { src: rebornPortraitBw, title: "Reborn - Black & White", category: "Portrait" },
-  { src: livePerformanceBw, title: "Live Performance - B&W", category: "Live" },
-  { src: rebornLive1, title: "Reborn - Live Performance 1", category: "Live" },
-  { src: rebornLive2, title: "Reborn - Live Performance 2", category: "Live" },
-  { src: rebornStudio, title: "In The Studio", category: "Studio" },
+  { src: studioKeys, title: "Mihai Gruia - In The Studio", category: "Studio" },
+  { src: duoPortrait, title: "Mihai Gruia - Duo Portrait", category: "Portrait" },
+  { src: liveCrowd, title: "Mihai Gruia - Live Performance with Crowd", category: "Live" },
+  { src: acousticSession, title: "Mihai Gruia - Acoustic Session", category: "Studio" },
+  { src: backstage, title: "Mihai Gruia - Backstage Moment", category: "Backstage" },
+  { src: dj, title: "Mihai Gruia - DJ Performance", category: "Live" },
+  { src: stagePerformance, title: "Mihai Gruia - On Stage", category: "Live" },
+  { src: studioPortrait, title: "Mihai Gruia - Studio Portrait", category: "Portrait" },
+  { src: akcentEarly, title: "Akcent - Early Days", category: "Archive" },
 ];
 
 const PressPhotosModal = ({ open, onOpenChange }: PressPhotosModalProps) => {
