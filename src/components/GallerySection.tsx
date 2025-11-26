@@ -7,22 +7,22 @@ import liveBw from "@/assets/live-performance-bw.jpg";
 
 const GallerySection = () => {
   const galleryImages = [
-    { src: studioImage, alt: "In the studio" },
-    { src: liveImage1, alt: "Live performance" },
-    { src: portraitImage, alt: "Portrait" },
-    { src: liveBw, alt: "Live performance black and white" },
-    { src: liveImage2, alt: "On stage" },
-    { src: bwPortrait, alt: "Black and white portrait" },
+    { src: studioImage, alt: "In the studio", span: "md:col-span-2 md:row-span-2" },
+    { src: liveImage1, alt: "Live performance", span: "md:col-span-1 md:row-span-1" },
+    { src: portraitImage, alt: "Portrait", span: "md:col-span-1 md:row-span-1" },
+    { src: liveBw, alt: "Live performance black and white", span: "md:col-span-1 md:row-span-2" },
+    { src: liveImage2, alt: "On stage", span: "md:col-span-2 md:row-span-1" },
+    { src: bwPortrait, alt: "Black and white portrait", span: "md:col-span-1 md:row-span-1" },
   ];
 
   return (
     <div className="py-24 px-6 bg-black">
-      <div className="max-w-3xl mx-auto space-y-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="max-w-4xl mx-auto space-y-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[180px] gap-3">
           {galleryImages.map((image, index) => (
             <div 
               key={index} 
-              className="aspect-square overflow-hidden animate-fade-in"
+              className={`overflow-hidden animate-fade-in ${image.span}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img
