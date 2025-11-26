@@ -2,28 +2,22 @@ import gruiaPortrait from "@/assets/gruia-portrait-about.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
 const AboutSection = () => {
   return <section className="relative w-full overflow-hidden bg-black">
-      {/* Mobile: Full background image with overlay - fills entire section */}
-      <div className="md:hidden absolute inset-0">
-        <img src={gruiaPortrait} alt="Mihai Gruia Portrait" className="w-full h-full object-cover object-[50%_30%]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-      </div>
-
-      <div className="relative z-10 py-16 sm:py-20 md:py-24">
+      <div className="relative py-12 sm:py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
-          <div className="grid md:grid-cols-[1fr,1fr] gap-0 md:items-center">
-            {/* Desktop: Portrait Image (hidden on mobile) */}
-            <div className="relative h-[40vh] sm:h-[50vh] md:h-[70vh] animate-fade-in overflow-hidden hidden md:block">
+          <div className="grid grid-cols-[40%_1fr] md:grid-cols-[1fr,1fr] gap-4 sm:gap-6 md:gap-0 items-center">
+            {/* Portrait Image - visible on all screens, left side on mobile */}
+            <div className="relative h-[70vh] sm:h-[60vh] md:h-[70vh] animate-fade-in overflow-hidden">
               <img src={gruiaPortrait} alt="Mihai Gruia Portrait" className="absolute inset-0 w-full h-full object-cover object-[30%_30%]" />
-              <div className="absolute inset-0 bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none z-10" />
+              <div className="absolute inset-0 bg-gradient-to-r md:bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none z-10" />
             </div>
 
-            {/* Text Content - overlaid on mobile, right column on desktop */}
-            <div className="animate-fade-in space-y-4 sm:space-y-6 py-8 pb-16 sm:py-12 md:py-0 md:pl-12">
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-[0.1em] sm:tracking-[0.15em] text-primary uppercase leading-[1.1]">
+            {/* Text Content - right column on all screens */}
+            <div className="animate-fade-in space-y-3 sm:space-y-4 md:space-y-6 py-4 sm:py-8 md:py-0 md:pl-12">
+              <h2 className="font-serif text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-[0.1em] sm:tracking-[0.15em] text-primary uppercase leading-[1.1]">
                 THIS IS GRUIA
               </h2>
 
-              <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg text-foreground/90 max-w-md leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 text-xs sm:text-sm md:text-base lg:text-lg text-foreground/90 leading-relaxed">
                 <p>
                   I've lived my whole life inside the music industry — with its rights, its limits, and everything in between. Reborn is the album where I finally tell my story without filters.
                 </p>
@@ -32,36 +26,36 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-4">
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <User className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-1" />
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 pt-2 sm:pt-4">
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3">
+                  <User className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" />
                   <div>
-                    <p className="text-[10px] sm:text-xs text-primary tracking-widest uppercase">25+ YEARS</p>
-                    <p className="text-[10px] sm:text-xs text-foreground/60 tracking-wide">Of Music</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-primary tracking-widest uppercase">25+ YEARS</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-foreground/60 tracking-wide">Of Music</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <Music className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3">
+                  <Music className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" />
                   <div>
-                    <p className="text-[10px] sm:text-xs text-primary tracking-widest uppercase">Music</p>
-                    <p className="text-[10px] sm:text-xs text-foreground/60 tracking-wide">Producer</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-primary tracking-widest uppercase">MUSIC</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-foreground/60 tracking-wide">Producer</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3">
+                  <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" />
                   <div>
-                    <p className="text-[10px] sm:text-xs text-primary tracking-widest uppercase">Former Member</p>
-                    <p className="text-[10px] sm:text-xs text-foreground/60 tracking-wide">Of Akcent</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-primary tracking-widest uppercase">FORMER MEMBER</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-foreground/60 tracking-wide">Of Akcent</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <Mic2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3">
+                  <Mic2 className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" />
                   <div>
-                    <p className="text-[10px] sm:text-xs text-primary tracking-widest uppercase">Independent</p>
-                    <p className="text-[10px] sm:text-xs text-foreground/60 tracking-wide">Artist</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-primary tracking-widest uppercase">INDEPENDENT</p>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-foreground/60 tracking-wide">Artist</p>
                   </div>
                 </div>
               </div>
