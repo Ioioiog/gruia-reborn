@@ -1,13 +1,13 @@
 const GallerySection = () => {
   const scenes = [
     { text: "Every artist has a beginning…", delay: "0s" },
-    { text: "A journey shaped by highs, lows, and everything in between.", delay: "4s" },
-    { text: "Twenty five years of music.\nTwenty five years of evolution.", delay: "8s" },
-    { text: "But true creation starts\nwhen you stop being who you were…", delay: "12s" },
-    { text: "…and become who you are meant to be.", delay: "17s" },
-    { text: "No filters. No expectations.", delay: "22s" },
-    { text: "Just truth.\nJust sound.\nJust soul.", delay: "26s" },
-    { text: "This is MIHAI GRUIA.\nREBORN.", delay: "30s", final: true }
+    { text: "A journey shaped by highs, lows, and everything in between.", delay: "1s" },
+    { text: "Twenty five years of music.\nTwenty five years of evolution.", delay: "3s" },
+    { text: "But true creation starts\nwhen you stop being who you were…", delay: "5s" },
+    { text: "…and become who you are meant to be.", delay: "6s" },
+    { text: "No filters. No expectations.", delay: "8s" },
+    { text: "Just truth.\nJust sound.\nJust soul.", delay: "10S" },
+    { text: "This is MIHAI GRUIA.\nREBORN.", delay: "11s", final: true },
   ];
 
   return (
@@ -27,11 +27,13 @@ const GallerySection = () => {
               className="text-center min-h-[120px] flex items-center justify-center opacity-0 animate-fade-in"
               style={{ animationDelay: scene.delay }}
             >
-              <p className={`whitespace-pre-line leading-relaxed ${
-                scene.final 
-                  ? 'font-serif text-3xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase' 
-                  : 'text-xl md:text-2xl text-foreground/90 font-light tracking-wide'
-              }`}>
+              <p
+                className={`whitespace-pre-line leading-relaxed ${
+                  scene.final
+                    ? "font-serif text-3xl md:text-5xl font-bold text-primary tracking-[0.15em] uppercase"
+                    : "text-xl md:text-2xl text-foreground/90 font-light tracking-wide"
+                }`}
+              >
                 {scene.text}
               </p>
             </div>
