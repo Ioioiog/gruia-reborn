@@ -1,4 +1,4 @@
-import gruiaPortrait from "@/assets/gruia-portrait-about-transparent.png";
+import gruiaPortrait from "@/assets/gruia-portrait-about.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
 
 const AboutSection = () => {
