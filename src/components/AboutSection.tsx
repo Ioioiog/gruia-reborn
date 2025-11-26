@@ -3,25 +3,26 @@ import { Music, Mic2, User, Sparkles } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <div className="py-24 px-6 bg-black">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Portrait Image */}
-          <div className="relative w-full max-w-md mx-auto">
+    <section className="relative min-h-screen w-full overflow-hidden bg-black">
+      <div className="max-w-7xl mx-auto px-6 py-12 md:py-0">
+        <div className="grid md:grid-cols-[1fr,1fr] gap-0 min-h-screen items-center">
+          {/* Left - Portrait Image (mirrored from hero) */}
+          <div className="relative h-[60vh] md:h-screen animate-fade-in overflow-hidden">
             <img 
               src={gruiaPortrait} 
               alt="Mihai Gruia Portrait" 
-              className="w-full h-auto object-contain"
+              className="absolute inset-0 w-full h-full object-cover object-[30%_30%]"
             />
+            <div className="absolute inset-0 bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none z-10" />
           </div>
 
-          {/* Right Column - Text Content */}
-          <div className="space-y-8">
-            <h2 className="font-serif text-3xl md:text-4xl font-normal text-primary tracking-[0.15em] uppercase">
+          {/* Right - Text Content */}
+          <div className="animate-fade-in space-y-6 py-20 md:py-0 md:pl-12">
+            <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-[0.15em] text-primary uppercase leading-[1.1] lg:text-6xl">
               THIS IS GRUIA
             </h2>
 
-            <div className="space-y-6 text-foreground/80 leading-relaxed text-sm">
+            <div className="space-y-6 text-base md:text-lg text-foreground/90 max-w-md leading-relaxed">
               <p>
                 I've lived my whole life inside the music industry — with its rights, its limits, and everything in between. Reborn is the album where I finally tell my story without filters.
               </p>
@@ -30,7 +31,7 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="flex items-start gap-3">
                 <User className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                 <div>
@@ -66,7 +67,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default AboutSection;

@@ -15,9 +15,7 @@ const Index = () => {
         <HeroSection />
         
         {/* Second Row: About/This is Gruia */}
-        <section className="relative border-t border-gold/20">
-          <AboutSection />
-        </section>
+        <AboutSection />
 
         {/* Third Row: Album (left) + Featured Single Be Real (right) */}
         <section className="relative border-t border-gold/20">
