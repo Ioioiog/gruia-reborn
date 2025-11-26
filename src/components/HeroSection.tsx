@@ -47,7 +47,7 @@ const HeroSection = () => {
               alt="Mihai Gruia"
               className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-transparent pointer-events-none z-10" style={{ maskImage: 'linear-gradient(to right, black 0%, transparent 15%)' }} />
           </div>
         </div>
       </div>
