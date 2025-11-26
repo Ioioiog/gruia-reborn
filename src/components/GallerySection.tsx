@@ -11,13 +11,13 @@ import akcentEarly from "@/assets/gallery-akcent-early.jpg";
 const GallerySection = () => {
   const galleryImages = [
     { src: studioKeys, alt: "In the studio creating music", span: "md:col-span-2 md:row-span-2" },
-    { src: duoPortrait, alt: "Artist portrait", span: "md:col-span-1 md:row-span-1" },
-    { src: liveCrowd, alt: "Live performance with crowd", span: "md:col-span-2 md:row-span-1" },
-    { src: acousticSession, alt: "Acoustic session", span: "md:col-span-1 md:row-span-1" },
-    { src: backstage, alt: "Backstage moment", span: "md:col-span-1 md:row-span-1" },
-    { src: dj, alt: "DJ performance", span: "md:col-span-1 md:row-span-1" },
     { src: stagePerformance, alt: "On stage", span: "md:col-span-1 md:row-span-2" },
-    { src: studioPortrait, alt: "Studio portrait", span: "md:col-span-1 md:row-span-1" },
+    { src: liveCrowd, alt: "Live performance with crowd", span: "md:col-span-3 md:row-span-1" },
+    { src: duoPortrait, alt: "Artist portrait", span: "md:col-span-2 md:row-span-1" },
+    { src: backstage, alt: "Backstage moment", span: "md:col-span-1 md:row-span-1" },
+    { src: acousticSession, alt: "Acoustic session", span: "md:col-span-2 md:row-span-1" },
+    { src: dj, alt: "DJ performance", span: "md:col-span-1 md:row-span-1" },
+    { src: studioPortrait, alt: "Studio portrait", span: "md:col-span-2 md:row-span-1" },
     { src: akcentEarly, alt: "Early days", span: "md:col-span-1 md:row-span-1" },
   ];
 
