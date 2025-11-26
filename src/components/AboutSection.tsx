@@ -1,19 +1,13 @@
 import portraitImage from "@/assets/reborn-portrait.jpg";
 import { Music, Mic2, User, Sparkles } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section className="py-24 px-6 bg-black border-t border-gold/20">
+  return <section className="py-24 px-6 bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-[1fr,1.2fr] gap-12 md:gap-16 items-center">
           {/* Left - Portrait */}
           <div className="animate-fade-in order-2 md:order-1">
             <div className="relative">
-              <img
-                src={portraitImage}
-                alt="Mihai Gruia Portrait"
-                className="w-full h-auto"
-              />
+              <img alt="Mihai Gruia Portrait" className="w-full h-auto" src="/lovable-uploads/3af33372-0907-47f3-9301-3cd91563024b.jpg" />
             </div>
           </div>
 
@@ -72,8 +66,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
