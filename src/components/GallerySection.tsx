@@ -1,6 +1,9 @@
 import live1 from "@/assets/reborn-live-1.jpg";
 import bereal from "@/assets/reborn-bereal.jpg";
 import studio from "@/assets/reborn-studio.jpg";
+import liveBw from "@/assets/live-performance-bw.jpg";
+import portraitBw from "@/assets/reborn-portrait-bw.png";
+import live2 from "@/assets/reborn-live-2.jpg";
 
 const GallerySection = () => {
   return (
@@ -16,16 +19,16 @@ const GallerySection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 animate-fade-in">
           <div className="group relative overflow-hidden aspect-square">
             <img
-              src={live1}
-              alt="Studio session"
+              src={liveBw}
+              alt="Live performance on stage"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
           
           <div className="group relative overflow-hidden aspect-square">
             <img
-              src={studio}
-              alt="Piano performance"
+              src={portraitBw}
+              alt="Reborn portrait"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
@@ -40,24 +43,24 @@ const GallerySection = () => {
 
           <div className="group relative overflow-hidden aspect-square">
             <img
-              src={live1}
-              alt="Recording session"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-          </div>
-          
-          <div className="group relative overflow-hidden aspect-square">
-            <img
               src={studio}
-              alt="Live on stage"
+              alt="Studio session"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
           
           <div className="group relative overflow-hidden aspect-square">
             <img
-              src={bereal}
-              alt="Performance moment"
+              src={live1}
+              alt="Live performance"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div className="group relative overflow-hidden aspect-square">
+            <img
+              src={live2}
+              alt="Concert moment"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
