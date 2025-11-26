@@ -1,21 +1,24 @@
-import studioImage from "@/assets/reborn-studio.jpg";
-import liveImage1 from "@/assets/reborn-live-1.jpg";
-import liveImage2 from "@/assets/reborn-live-2.jpg";
-import portraitImage from "@/assets/reborn-portrait-2.jpg";
-import bwPortrait from "@/assets/reborn-portrait-bw.png";
-import liveBw from "@/assets/live-performance-bw.jpg";
-import backstageBw from "@/assets/gruia-backstage-bw.jpg";
-import djBw from "@/assets/gruia-dj-bw.jpg";
+import studioKeys from "@/assets/gallery-studio-keys.jpg";
+import duoPortrait from "@/assets/gallery-duo-portrait.jpg";
+import liveCrowd from "@/assets/gallery-live-crowd.jpg";
+import acousticSession from "@/assets/gallery-acoustic-session.jpg";
+import backstage from "@/assets/gallery-backstage.jpg";
+import dj from "@/assets/gallery-dj.jpg";
+import stagePerformance from "@/assets/gallery-stage-performance.jpg";
+import studioPortrait from "@/assets/gallery-studio-portrait.jpg";
+import akcentEarly from "@/assets/gallery-akcent-early.jpg";
 
 const GallerySection = () => {
   const galleryImages = [
-    { src: studioImage, alt: "In the studio", span: "md:col-span-2 md:row-span-2" },
-    { src: liveImage1, alt: "Live performance", span: "md:col-span-1 md:row-span-1" },
-    { src: portraitImage, alt: "Portrait", span: "md:col-span-1 md:row-span-1" },
-    { src: liveBw, alt: "Live performance black and white", span: "md:col-span-1 md:row-span-2" },
-    { src: liveImage2, alt: "On stage", span: "md:col-span-2 md:row-span-1" },
-    { src: backstageBw, alt: "Backstage moment", span: "md:col-span-1 md:row-span-1" },
-    { src: djBw, alt: "DJ performance", span: "md:col-span-1 md:row-span-1" },
+    { src: studioKeys, alt: "In the studio creating music", span: "md:col-span-2 md:row-span-2" },
+    { src: duoPortrait, alt: "Artist portrait", span: "md:col-span-1 md:row-span-1" },
+    { src: liveCrowd, alt: "Live performance with crowd", span: "md:col-span-2 md:row-span-1" },
+    { src: acousticSession, alt: "Acoustic session", span: "md:col-span-1 md:row-span-1" },
+    { src: backstage, alt: "Backstage moment", span: "md:col-span-1 md:row-span-1" },
+    { src: dj, alt: "DJ performance", span: "md:col-span-1 md:row-span-1" },
+    { src: stagePerformance, alt: "On stage", span: "md:col-span-1 md:row-span-2" },
+    { src: studioPortrait, alt: "Studio portrait", span: "md:col-span-1 md:row-span-1" },
+    { src: akcentEarly, alt: "Early days", span: "md:col-span-1 md:row-span-1" },
   ];
 
   return (
