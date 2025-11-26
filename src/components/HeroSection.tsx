@@ -17,40 +17,37 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <div className="animate-fade-in space-y-8 max-w-4xl">
-          <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-wider text-foreground">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.25em] text-primary uppercase">
             GRUIA — REBORN
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">
+          <p className="mt-6 text-lg text-foreground/80">
             The most personal project of my career.
           </p>
           
-          <p className="max-w-2xl mx-auto text-base md:text-lg text-foreground/80 leading-relaxed">
-            From the stages of Akcent to the freedom of independence, REBORN is a journey through sound, 
-            emotion, and evolution. This is where it all begins again.
+          <p className="mt-4 text-sm sm:text-base text-foreground/80">
+            From my early days as a member of Akcent back in 2001 to my evolution as a producer and independent artist, "Reborn" is the album where I finally tell my story without filters.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+          <div className="mt-10 flex flex-wrap gap-4 justify-center">
             <Button 
               variant="gold" 
               size="lg"
-              className="min-w-[200px]"
               asChild
             >
-              <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://open.spotify.com/album/4dnUXGfC2sFXLmAMalo8Bs" target="_blank" rel="noopener noreferrer">
                 <Music2 className="mr-2 h-5 w-5" />
-                SPOTIFY
+                LISTEN ON SPOTIFY
               </a>
             </Button>
             <Button 
               variant="goldOutline" 
               size="lg"
-              className="min-w-[200px]"
               asChild
             >
-              <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer">
+              <a href="http://itunes.apple.com/album/id1852252958?ls=1&app=itunes" target="_blank" rel="noopener noreferrer">
                 <Music2 className="mr-2 h-5 w-5" />
-                APPLE MUSIC
+                LISTEN ON APPLE MUSIC
               </a>
             </Button>
           </div>

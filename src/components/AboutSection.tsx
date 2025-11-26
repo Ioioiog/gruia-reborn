@@ -29,18 +29,13 @@ const AboutSection = () => {
 
             <div className="space-y-6 text-foreground/80 leading-relaxed">
               <p>
-                For over two decades, I've lived and breathed music. From the early days with Akcent, 
-                touring the world and connecting with millions, to the quieter years behind the scenes 
-                as a producer and songwriter — every chapter shaped who I am today.
+                I've lived my whole life inside the music industry — with its lights, its limits, and everything in between.
               </p>
               <p>
-                But there comes a time when you need to reclaim your voice. To step back into the light, 
-                not as part of something, but as yourself. REBORN is that moment. It's raw, honest, and 
-                unapologetically mine.
+                Today, for the first time, I have the freedom to create music exactly the way I feel it.
               </p>
               <p>
-                This is not just a new project. This is liberation. This is GRUIA, reborn and ready to 
-                share music that comes from the soul, without filters, without compromise.
+                "Reborn" is not just an album. It is the moment I found myself again — as an artist, and as a human being.
               </p>
             </div>
 

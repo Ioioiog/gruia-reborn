@@ -31,17 +31,9 @@ const FeaturedSingleSection = () => {
               <div className="w-24 h-px bg-primary mt-4" />
             </div>
 
-            <div className="space-y-6 text-foreground/80 leading-relaxed">
-              <p>
-                In a world of filters and facades, "Be Real" is a call to authenticity. It's about 
-                stripping away the noise, embracing who you are, and showing up genuinely — in music, 
-                in life, in everything.
-              </p>
-              <p>
-                This track captures the essence of the REBORN journey. It's bold, it's vulnerable, 
-                and it's uncompromisingly honest.
-              </p>
-            </div>
+            <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+              A song about dropping the masks and coming back to who you really are.
+            </p>
 
             <Button 
               variant="gold" 

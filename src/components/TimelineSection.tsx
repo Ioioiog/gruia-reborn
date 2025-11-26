@@ -3,11 +3,11 @@ import portrait2 from "@/assets/reborn-portrait-2.jpg";
 
 const TimelineSection = () => {
   const timelineEvents = [
-    { year: "2001", event: "Akcent begins" },
-    { year: "2004–2010", event: "World tours" },
-    { year: "2014", event: "Producer chapter" },
-    { year: "2024", event: '"Reborn" is written' },
-    { year: "2025", event: "This is GRUIA" },
+    { year: "2001", title: "Akcent begins.", text: "The first chapter of a long journey." },
+    { year: "2004–2010", title: "World tours.", text: "A global audience across Europe, Asia and Latin America." },
+    { year: "2014", title: "Producer chapter.", text: "Writing, producing and shaping sound behind the scenes." },
+    { year: "2024", title: '"Reborn" is written.', text: "A new sound. A new direction." },
+    { year: "2025", title: "This is GRUIA.", text: "Reborn as an independent artist." },
   ];
 
   return (
@@ -31,11 +31,12 @@ const TimelineSection = () => {
                   
                   {/* Content */}
                   <div className="space-y-1">
-                    <div className="font-serif text-2xl text-primary font-bold tracking-wider">
+                    <div className="text-xs text-foreground/60">
                       {item.year}
                     </div>
-                    <div className="text-lg text-foreground/80 tracking-wide">
-                      {item.event}
+                    <div className="text-sm sm:text-base text-foreground">
+                      <span className="font-semibold">{item.title}</span>{" "}
+                      {item.text && <span className="text-foreground/80">{item.text}</span>}
                     </div>
                   </div>
                 </div>
